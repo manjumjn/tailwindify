@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Variations</title>
+    <link rel="stylesheet" href="./alert.scss">
+</head>
+<body>
+    <!-- Header -->
+    <include src="partials/header.html"></include>
+
+    <!-- Alert Variations -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-6xl mx-auto px-10" >
+        <div class="flex w-full space-y-10 flex-col">
+            <h3 class="text-xl font-semibold text-gray-800">Alert Variation 1</h3>
+          <div class="w-full max-w-lg flex border border-l-4 border-green-400 p-3 shadow-xl rounded group relative">
+            <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 text-green-400 icon w-7 h-7" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <circle cx="12" cy="12" r="9" />
+              <path d="M9 12l2 2l4 -4" stroke="white" />
+            </svg>
+            <div class="px-3">
+              <p class="font-semibold text-base leading-4 mb-1 text-gray-900">Success</p>
+              <span class="font-normal text-sm leading-6 text-gray-500">This is Success message demo with a very long text which i could type at this moment lol</span>
+            </div>
+            <button type="button" class="absolute right-1.5 top-1.5 transition-opacity opacity-0 group-hover:opacity-100 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 focus:outline-none" @click="toggle">
+              <span class="sr-only">Close main menu</span>
+              <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+        
+          <div class="w-full max-w-lg flex border border-l-4 border-blue-400 p-3 shadow-xl rounded group relative">
+            <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 text-blue-400 icon w-7 h-7" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <circle cx="12" cy="12" r="9" />
+              <line x1="12" y1="8" x2="12.01" y2="8" stroke="white"/>
+              <polyline points="11 12 12 12 12 16 13 16" stroke="white" />
+            </svg>
+            <div class="px-3">
+              <p class="font-semibold text-base leading-4 mb-1 text-gray-900">Info</p>
+              <span class="font-normal text-sm leading-6 text-gray-500">This is Info message demo </span>
+            </div>
+            <button type="button" class="absolute right-1.5 top-1.5 transition-opacity opacity-0 group-hover:opacity-100 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 focus:outline-none" @click="toggle">
+              <span class="sr-only">Close main menu</span>
+              <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+        
+          <div class="w-full max-w-lg flex border border-l-4 border-yellow-400 p-3 shadow-xl rounded group relative">
+            <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 text-yellow-500 icon w-7 h-7" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M5 19h14a2 2 0 0 0 1.84 -2.75l-7.1 -12.25a2 2 0 0 0 -3.5 0l-7.1 12.25a2 2 0 0 0 1.75 2.75" fill="currentColor"/>
+              <path d="M12 9v2m0 4v.01" stroke="white"/>
+            </svg>
+            <div class="px-3">
+              <p class="font-semibold text-base leading-4 mb-1 text-gray-900">Waring</p>
+              <span class="font-normal text-sm leading-6 text-gray-500">This is Warning message demo </span>
+            </div>
+            <button type="button" class="absolute right-1.5 top-1.5 transition-opacity opacity-0 group-hover:opacity-100 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 focus:outline-none" @click="toggle">
+              <span class="sr-only">Close main menu</span>
+              <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+        
+          <div class="w-full max-w-lg flex border border-l-4 border-red-400 p-3 shadow-xl rounded group relative">
+            <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 text-red-500 icon w-7 h-7" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <circle cx="12" cy="12" r="9" fill="currentColor"/>
+              <path d="M10 10l4 4m0 -4l-4 4" stroke="#fff"/>
+            </svg>
+            <div class="px-3">
+              <p class="font-semibold text-base leading-4 mb-1 text-gray-900">Error</p>
+              <span class="font-normal text-sm leading-6 text-gray-500">This is Error message demo </span>
+            </div>
+            <button type="button" class="absolute right-1.5 top-1.5 transition-opacity opacity-0 group-hover:opacity-100 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 focus:outline-none" @click="toggle">
+              <span class="sr-only">Close main menu</span>
+              <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="flex w-full space-y-10 flex-col">
+            <h3 class="text-xl font-semibold text-gray-800">Alert Variation 2</h3>
+          <div class="relative group w-full max-w-lg flex border border-green-300 p-3 shadow-lg rounded bg-gradient-to-r from-green-200">
+            <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 text-green-400 icon w-7 h-7" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <circle cx="12" cy="12" r="9" />
+              <path d="M9 12l2 2l4 -4" stroke="white" />
+            </svg>
+            <div class="px-3">
+              <p class="font-semibold text-base leading-4 mb-1 text-gray-900">Success</p>
+              <span class="font-normal text-sm leading-6 text-gray-600">This is Success message demo with a very long text which i could type lol</span>
+            </div>
+            <button type="button" class="absolute right-1.5 top-1.5 transition-opacity opacity-0 group-hover:opacity-100 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 focus:outline-none" @click="toggle">
+              <span class="sr-only">Close main menu</span>
+              <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+        
+          <div class="relative group w-full max-w-lg flex border border-blue-300 p-3 shadow-lg rounded bg-gradient-to-r from-blue-100">
+            <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 text-blue-400 icon w-7 h-7" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <circle cx="12" cy="12" r="9" />
+              <line x1="12" y1="8" x2="12.01" y2="8" stroke="white"/>
+              <polyline points="11 12 12 12 12 16 13 16" stroke="white" />
+            </svg>
+            <div class="px-3">
+              <p class="font-semibold text-base leading-4 mb-1 text-gray-900">Info</p>
+              <span class="font-normal text-sm leading-6 text-gray-600">This is Info message demo </span>
+            </div>
+            <button type="button" class="absolute right-1.5 top-1.5 transition-opacity opacity-0 group-hover:opacity-100 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 focus:outline-none" @click="toggle">
+              <span class="sr-only">Close main menu</span>
+              <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+        
+          <div class="relative group w-full max-w-lg flex border border-yellow-300 p-3 shadow-lg rounded bg-gradient-to-r from-yellow-100">
+            <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 text-yellow-500 icon w-7 h-7" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M5 19h14a2 2 0 0 0 1.84 -2.75l-7.1 -12.25a2 2 0 0 0 -3.5 0l-7.1 12.25a2 2 0 0 0 1.75 2.75" fill="currentColor"/>
+              <path d="M12 9v2m0 4v.01" stroke="white"/>
+            </svg>
+            <div class="px-3">
+              <p class="font-semibold text-base leading-4 mb-1 text-gray-900">Waring</p>
+              <span class="font-normal text-sm leading-6 text-gray-600">This is Warning message demo </span>
+            </div>
+            <button type="button" class="absolute right-1.5 top-1.5 transition-opacity opacity-0 group-hover:opacity-100 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 focus:outline-none" @click="toggle">
+              <span class="sr-only">Close main menu</span>
+              <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+        
+          <div class="relative group w-full max-w-lg flex border border-red-300 p-3 shadow-lg rounded bg-gradient-to-r from-red-100">
+            <svg xmlns="http://www.w3.org/2000/svg" class="flex-shrink-0 text-red-500 icon w-7 h-7" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <circle cx="12" cy="12" r="9" fill="currentColor"/>
+              <path d="M10 10l4 4m0 -4l-4 4" stroke="#fff"/>
+            </svg>
+            <div class="px-3">
+              <p class="font-semibold text-base leading-4 mb-1 text-gray-900">Error</p>
+              <span class="font-normal text-sm leading-6 text-gray-600">This is Error message demo </span>
+            </div>
+            <button type="button" class="absolute right-1.5 top-1.5 transition-opacity opacity-0 group-hover:opacity-100 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 focus:outline-none" @click="toggle">
+              <span class="sr-only">Close main menu</span>
+              <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

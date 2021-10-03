@@ -1,0 +1,33 @@
+{
+  "name": "tailwindcss-html-components",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build src/**/*.html --no-source-maps --no-content-hash",
+    "serve": "parcel serve src/**/*.html --port 8989 --open"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "2.0.0-rc.0",
+    "autoprefixer": "^10.3.6",
+    "parcel-plugin-custom-dist-structure": "^1.1.19",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "posthtml-include": "^1.7.1",
+    "sass": "^1.42.1",
+    "tailwindcss": "^2.2.16"
+  },
+  "customDistStructure": {
+    "config": {
+      "components": [
+        "src/components/*.html"
+      ],
+      ".css": "styles"
+    },
+    "options": {
+      "development": true
+    }
+  },
+  "dependencies": {
+    "parcel": "^2.0.0-rc.0",
+    "postcss": "^8.3.8"
+  }
+}
