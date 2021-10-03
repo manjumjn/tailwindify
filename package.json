@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
+    "prebuild": "rm -rf dist",
     "build": "parcel build src/**/*.html --no-source-maps --no-content-hash",
     "serve": "parcel serve src/**/*.html --port 8989 --open"
   },
