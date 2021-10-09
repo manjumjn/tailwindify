@@ -54,7 +54,8 @@ yarn serve
 
 The local dev server on serve can be accessed through port 8989 i.e., `localhost:8989`
 
-### How it works
+
+## How it works
 
 - Each component is present in it's respective folder eg: `components/alert`,`components/notification`,`components/notification variation 1` etc
 - Optional SCSS file can added and linked directly within HTML using `link` attribute which will be compiled by parcel.
@@ -73,7 +74,17 @@ The local dev server on serve can be accessed through port 8989 i.e., `localhost
   ```
 - Once the command `yarn build` is run, the output files will be present on `dist` folder with same component structure.
 
-### How to add new component
+## List of Component Categories
+
+- [x] Alert
+- [ ] Card
+- [ ] Navigation
+- [ ] Notification
+- [ ] CTA
+
+and more..
+
+## How to add new component
 
 1. Duplicate the `template` folder into components with component name
 2. Update the title in `index.html` and contents within `<!-- Component start --> <!-- Component End -->` lines.
@@ -88,3 +99,8 @@ Glad to see you are interested in improving this repository. Please read the con
 
 By contributing, you agree that your contributions will be licensed under its MIT License.
 
+## Contact Information
+
+- Email: manjumjng2@gmail.com
+- Twitter: https://twitter.com/manjumjn
+- Website: https://manjumjn.com
