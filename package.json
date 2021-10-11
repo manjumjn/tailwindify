@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "prebuild": "rm -rf dist",
+    "prebuild": "del-cli ./dist",
     "build": "parcel build src/**/*.html --no-source-maps --no-content-hash",
     "serve": "parcel serve src/**/*.html --port 8989 --open"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "2.0.0-rc.0",
     "autoprefixer": "^10.3.6",
+    "del-cli": "^4.0.1",
     "parcel-plugin-custom-dist-structure": "^1.1.19",
     "parcel-plugin-nuke-dist": "^1.0.1",
     "posthtml-include": "^1.7.1",
