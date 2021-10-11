@@ -5,12 +5,24 @@ HTML Components built using TailwindCSS and Parcel
 - [TailwindCSS](https://tailwindcss.com/)
 - [ParcelJS](https://parceljs.org/)
 
+## Table of Components
+  * [Usage](#usage)
+    + [Install Dependencies](#install-dependencies)
+    + [Build Components](#build-components)
+    + [Update Components and Watch](#update-components-and-watch)
+  * [How it works](#how-it-works)
+  * [List of Component Categories](#list-of-component-categories)
+  * [How to add new component](#how-to-add-new-component)
+  * [Contribution](#contribution)
+  * [License](#license)
+  * [Contact Information](#contact-information)
+
 ## File Structure
 
 ```
   ├── src/
         ├──components             contains components respective folder with markup and styles
-            ├──COMPONENT A        components folder where all components with thier respective folders are present
+            ├──COMPONENT A        components folder where all components with their respective folders are present
                 ├──index.html     component A markup file
                 ├──style.scss     component A style file (Optional)
                 ├──preview.md     component screenshot preview on folder access
@@ -34,7 +46,7 @@ HTML Components built using TailwindCSS and Parcel
 ```
 ## Usage
 
-### Install Depedencies
+### Install Dependencies
 
 ```bash
 yarn install
@@ -57,8 +69,8 @@ The local dev server on serve can be accessed through port 8989 i.e., `localhost
 
 ## How it works
 
-- Each component is present in it's respective folder eg: `components/alert`,`components/notification`,`components/notification variation 1` etc
-- Optional SCSS file can added and linked directly within HTML using `link` attribute which will be compiled by parcel.
+- Each component is present in it's respective folder eg: `components/alert`,`components/notification`,`components/card` etc
+- Optional SCSS file is added and linked directly within HTML using `link` attribute which will be compiled by parcel. 
 
   ````HTML
   <link rel="stylesheet" href="style.scss">
@@ -72,7 +84,7 @@ The local dev server on serve can be accessed through port 8989 i.e., `localhost
 
   // Other styles here using @apply for extracting tailwind classes to each class
   ```
-- Once the command `yarn build` is run, the output files will be present on `dist` folder with same component structure.
+- Once the command `yarn build` is run, the output files will be present on `dist` folder with the same component structure.
 
 ## List of Component Categories
 
@@ -86,9 +98,9 @@ and more..
 
 ## How to add new component
 
-1. Duplicate the `template` folder into components with component name
+1. Go to `src/components` directory. Duplicate the `template` folder into components with the component name
 2. Update the title in `index.html` and contents within `<!-- Component start --> <!-- Component End -->` lines.
-3. Remove default `style.scss` and linking of file if not used in the `index.html`
+3. Remove default `style.scss` and unlink the file if not used in the `index.html`
 4. Take a Screenshot of the result and replace the `preview.png` within the component folder.
 
 ## Contribution
