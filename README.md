@@ -96,7 +96,7 @@ yarn build
 
 ## How to add new component
 
-1. Go to `src/components` directory. Duplicate the `template` folder into components with the component name
+1. Go to `src/components` directory. Duplicate the `template` folder into components with the component name. Follow [Naming Convention](#naming-convention) for naming the folder
 2. Update the title in `index.html` and contents within `<!-- Component start --> <!-- Component End -->` lines.
 3. Take a Screenshot of the result and replace the `preview.png` within the component folder.
 4. Run `yarn serve` to play with changes
