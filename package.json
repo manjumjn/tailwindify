@@ -4,8 +4,8 @@
   "license": "MIT",
   "scripts": {
     "prebuild": "del-cli ./dist",
-    "build": "parcel build src/**/*.html --no-source-maps --no-content-hash",
-    "serve": "parcel serve src/**/*.html --port 8989 --open"
+    "build": "parcel build src/**/*.html --no-source-maps --no-content-hash --no-cache",
+    "serve": "parcel serve src/**/*.html --port 8989 --open --no-cache"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "2.0.0-rc.0",
