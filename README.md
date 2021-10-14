@@ -71,7 +71,7 @@ yarn build
 
 ## How it works
 
-- Each component is present in it's respective folder eg: `components/COMPONENT1`,`components/COMPONENT2`, Eg: `components/card` etc
+- Each component is present in its respective folder eg: `components/COMPONENT1`,`components/COMPONENT2`, Eg: `components/card` etc
 - SCSS file is added and linked directly within HTML using `link` attribute which will be compiled by parcel which as default `tailwindcss` styles.
 
   ````HTML
