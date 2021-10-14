@@ -10,16 +10,13 @@ It's never a fun experience to have your pull request declined after investing a
 
 ## Coding standards
 
-### Naming Convention
-
-- Each Component should follow the naming as `SERIAL_NUMBER-COMPONENT_NAME`. Eg: `01-alert`,'02-notifications' etc
-- When there is a variation of the component such as `alert` we can name as `01-alert-variant2` etc
-- The serial number must follow along with category. For Example currently no card component is present, in that case `01-card`. Each component numbering starts from `01` followed by category
-
-    When it comes to tailwind it's easier to throw in the classes you need based on the design requirements but here are list you can follow to improve.
+When it comes to tailwind it's easier to throw in the classes you need based on the design requirements but here are list you can follow to improve.
 
  - **Don't modify** the existing `tailwind.config.js` - As this is a open-source project and multiple contributors will be invloved, it's better to keep it standard config so it will be consistent. 
- - **Component Names** must follow the [naming convention](#naming-convention).
+ - **Component Names** must follow the **Naming Convention**.
+    * Each Component should follow the naming as `SERIAL_NUMBER-COMPONENT_NAME`. Eg: `01-alert`,'02-notifications' etc
+    * When there is a variation of the component such as `alert` we can name as `01-alert-variant2` etc
+    * The serial number must follow along with category. For Example currently no card component is present, in that case `01-card`. Each component numbering starts from `01` followed by category
  - **Group related classes** together - By Grouping means keeping related classes together ( Typography related classes, transition classes etc)
  - **Related class names** - When using `@apply` directive to extract componenet classes to seperate class, use related class names. Eg: `.btn` `.card` `.menu` etc
  - **Minimum DOM elements/nesting** - Try to minimize the nesting of the elements when not necessary 
