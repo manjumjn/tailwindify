@@ -4,13 +4,9 @@ Thanks for your interest in contributing to Tailwindify! Please take a moment to
 
 ## Pull requests
 
-**Please check with list of available components or `src/components` folder first before starting work on new component.**
+**Please check with list of available components or `src/components` folder first to see if there is any similar components with same design exists.**
 
-It's never a fun experience to have your pull request declined after investing a lot of time and effort. To avoid this from happening, we request that contributors create [an issue](https://github.com/manjumjn/tailwindify/issues) to first discuss if there is any component that already exists similar to the one you are going to build.
-
-If the component with **category exists** then you can create it as a variation of the same. **Eg: Alert VARIATION_NAME**
-
-
+It's never a fun experience to have your pull request declined after investing a lot of time and effort. To avoid this from happening, we request that contributors to first check if there is any component that already exists similar to the one you are going to build. If the same design can be improved then you can create PR by updating it. Further more you can create [an issue](https://github.com/manjumjn/tailwindify/issues) to discuss the same.
 
 ## Coding standards
 
