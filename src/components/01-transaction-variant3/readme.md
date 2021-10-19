@@ -1,3 +1,3 @@
 ## Preview
 
-![Alert Variations](preview.png)
+![Transaction Variant 3](preview.png)
