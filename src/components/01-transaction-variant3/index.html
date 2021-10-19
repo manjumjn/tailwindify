@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transaction V3</title>
+  <link rel="stylesheet" href="style.scss">
+</head>
+
+<body>
+  <!-- Header -->
+  <include src="partials/header.html"></include>
+
+  <!-- Component Start -->
+
+  <div class=" h-40 bg-blue-50 w-full"></div>
+  <!-- main section starts -->
+  <section
+    class="mb-20 mx-auto py-5 sm:py-7 px-4 sm:px-9 -mt-20 bg-white w-11/12 sm:w-4/5 md:w-[70%] lg:w-1/2 xl:w-34r  drop-shadow font-inter border">
+    <h1 class="font-bold text-lg text-black">Investment</h1>
+    <h3 class="font-normal text-lg text-gray-400">Get started with investment</h3>
+
+    <form action="#" class="flex flex-col justify-center mt-9 font-medium text-sm text-gray-500">
+
+      <!-- amount tab -->
+      <label for="amount" class="flex flex-col cursor-pointer">
+        <span class="">Amount</span>
+
+        <div class="w-full flex rounded-md border-gray-300 border">
+          <select
+              class="py-4 pl-4 border-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent">
+              <option value="AED">AED</option>
+              <option value="ARS">ARS</option>
+              <option value="INR">INR</option>
+              <option value="USD" selected>USD</option>
+          </select>
+          <input type="number" name="amount" id="amount"
+              class="border-0 rounded-r-md w-full border-l-0 border-gray-400 focus:outline-none focus:ring-2 focus:ring-black focus:border-transparent py-4 px-4 sm:px-8"
+              placeholder="Enter amount">
+      </div>
+      </label>
+
+      <!-- three small amount boxes -->
+      <div class="flex justify-end mt-5 mr">
+        <button class="text-xs bg-gray-100 rounded-md text-gray-500 p- mr-2 cursor-pointer">$1000</button>
+        <button class="text-xs bg-gray-100 rounded-md text-gray-500 p- mr-2 cursor-pointer">$5000</button>
+        <button class="text-xs bg-gray-100 rounded-md text-gray-500 p- mr-2 cursor-pointer">$10,000</button>
+      </div>
+
+      <h2 class="mt-7">Payment Details</h2>
+      <div class="flex justify-between items-center mt-4 border-b border-gray-200 text-gray-400">
+        <button class="flex justify-center items-center space-x-1 sm:space-x-3 pb-4 border-b border-black">
+          <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#000000" fill-rule="evenodd" clip-rule="evenodd"
+              d="M18 0H2C0.89 0 0.01 0.89 0.01 2L0 14C0 15.11 0.89 16 2 16H18C19.11 16 20 15.11 20 14V2C20 0.89 19.11 0 18 0ZM18 14H2V8H18V14ZM2 4H18V2H2V4Z" />
+          </svg>
+          <span class="text-black">Credit/Debit</span>
+        </button>
+
+        <button class="flex justify-center items-center space-x-1 sm:space-x-3 pb-4">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill="#A8A8A8"
+              d="M17.6374 11.9969C17.4225 11.5027 17.0917 11.0688 16.43 10.7035C16.0879 10.5101 15.7206 10.3655 15.3386 10.2738C15.5956 10.1544 15.832 9.99485 16.0389 9.80117C16.3431 9.52923 16.5737 9.18486 16.7093 8.8C16.834 8.4089 16.885 7.99802 16.8596 7.58828C16.8124 6.86641 16.6706 6.16602 16.2925 5.66328C15.9143 5.16055 15.3815 4.77383 14.6768 4.50313C14.1354 4.29688 13.5811 4.16797 12.7218 4.1207V1.375H11.003V4.125H9.62801V1.375H7.86629V4.125H4.125V6.1875H5.32254C5.69637 6.1875 5.94988 6.22188 6.07879 6.28633C6.19873 6.33764 6.29735 6.42868 6.35809 6.54414C6.41394 6.65156 6.43973 6.90508 6.43973 7.29609V14.7383C6.43973 15.125 6.41394 15.3742 6.35809 15.4859C6.30223 15.5977 6.27215 15.6965 6.13894 15.7566C6.00574 15.8168 6.00145 15.8125 5.63191 15.8125H4.49754L4.125 17.875H7.86328V20.625H9.625V17.875H11V20.625H12.7187V17.8578C13.8359 17.802 14.6309 17.6559 15.2711 17.4152C16.1004 17.1059 16.7363 16.6547 17.1918 16.0617C17.6473 15.4687 17.7934 14.5621 17.8333 13.8617C17.8621 13.2387 17.832 12.4352 17.6374 11.9969ZM9.625 6.44531H11V9.625H9.625V6.44531ZM9.625 15.5547V11.6875H11V15.5547H9.625ZM12.7187 6.61289C12.9766 6.72031 13.1441 6.93516 13.3117 7.15859C13.4965 7.40352 13.591 7.73008 13.591 8.07812C13.591 8.41328 13.4664 8.70117 13.2687 8.95898C13.1055 9.16953 12.9766 9.31563 12.7187 9.43594V6.61289ZM13.9562 14.6352C13.6211 14.9316 13.4277 15.0691 13.0066 15.2281C12.9125 15.2613 12.8163 15.2885 12.7187 15.3098V11.752C12.8868 11.7768 13.0504 11.826 13.2043 11.898C13.5395 12.0398 13.8574 12.1945 14.0551 12.4652C14.2742 12.7762 14.3941 13.1462 14.3988 13.5266C14.3975 13.9949 14.2772 14.3516 13.955 14.6352H13.9562Z" />
+          </svg>
+          <span class="">Bitcoin</span>
+        </button>
+
+        <button class="flex justify-center items-center space-x-1 sm:space-x-3 pb-4">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 12L12 3L18 12L12 21L6 12Z" stroke="#A8A8A8" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <path d="M6 12L12 9L18 12L12 14L6 12Z" stroke="#A8A8A8" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          <span class="">Ethereum</span>
+        </button>
+      </div>
+
+
+      <div class="flex justify-between items-center mt-4">
+        <div for="amount" class="flex flex-col cursor-pointer mt-4 w-full mr-4">
+          <span class="">Card Number</span>
+          <label class="relative border-2 group rounded-lg w-full border-gray-400 mt-4 py-4 space-x-2 sm:space-x-3">
+            <img class="top-2 right-0 sm:right-4 w-12 absolute"
+              src="img/mastercard.png"
+              alt="">
+            <input type="radio" name="radiotest" id="test1" class="border-gray-500 group-hover:border-blue-500">
+            <span class="absolute  text-gray-500">Mastercard XXX-XX 0049</span>
+          </label>
+          <label for="test1" class="flex items-center space-x-2 cursor-pointer group">
+
+          </label>
+        </div>
+
+        <label for="CVV" class="flex flex-col justify-center items-start mt-4">
+          <span class="">CVV</span>
+          <input type="number" size="3" class="text-center mt-4 w-24 sm:w-32 md:w-36 rounded-lg py-4  border border-gray-400"
+            placeholder="o o o">
+        </label>
+      </div>
+
+      <div class="flex justify-between items-center mt-1">
+        <div for="amount" class="flex flex-col cursor-pointer w-full mr-4">
+          <label class="relative border-2 group rounded-lg w-full border-gray-400 mt-0 py-4 space-x-2 sm:space-x-3">
+            <img class="top-4 right-1 sm:right-4 w-12 absolute"
+              src="img/Visa.png"
+              alt="">
+            <input type="radio" name="radiotest" id="test1" class="border-gray-500 group-hover:border-blue-500">
+            <span class="absolute  text-gray-500">Visa XXX-XX 009965</span>
+          </label>
+          <label for="test1" class="flex items-center space-x-2 cursor-pointer group">
+
+          </label>
+        </div>
+
+        <label for="CVV" class="flex flex-col justify-center items-start invisible">
+          <span class="">CVV</span>
+          <input type="number" size="3" class="text-center mt-0 w-24 sm:w-32 md:w-36 rounded-lg py-4"
+            placeholder="o o o">
+        </label>
+      </div>
+
+      <!-- submit button -->
+      <div class=" flex items-baseline justify-between mt-8">
+        <a href="#" class="flex">
+          <svg class="mr-2" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.625 11.375H11.375V16.625H9.625V11.375H4.375V9.625H9.625V4.375H11.375V9.625H16.625V11.375Z"
+              fill="#8F8F8F" />
+          </svg>
+          <span>ADD A CARD</span>
+        </a>
+        <label for="amountWithdraw"
+          class="cursor-pointer w-2/4 group  flex items-center  bg-indigo-900 rounded-md  mb-4 py-4 hover:shadow-lg">
+          <input type="submit" name="amountWithdraw" id="amountWithdraw" value="Invest Now"
+            class="mx-auto font-inter text-lg not-italic  font-semibold text-white bg-indigo-900 group-hover:border-black">
+        </label>
+      </div>
+    </form>
+  </section>
+  <!-- main section ends -->
+  <!-- Component End -->
+</body>
+
+</html>
