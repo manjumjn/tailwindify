@@ -5,11 +5,7 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {
-      width: {
-         '34r': '34rem',
-      },
-    },
+    extend: {},
   },
   variants: {
     extend: {},

@@ -16,21 +16,19 @@
     <include src="partials/header.html"></include>
 
     <!-- Component Start -->
-
-    <div class=" h-40 bg-blue-50 w-full"></div>
     <!-- main section starts -->
-    <section
-        class="mx-auto -mt-20 bg-white w-11/12 sm:w-4/5 md:w-[70%] lg:w-1/2 xl:w-34r px-8 drop-shadow font-Inter text-gray-500 border">
+    <section class="mx-auto bg-gray-100 w-11/12 sm:w-4/5 md:w-[70%] lg:w-1/2 xl:w-34r px-8 drop-shadow-md font-Inter text-gray-500 border rounded">
+        <!-- Note: Here above in section's class, I have mentioned `xl:w-34r`. `w-34r` is a new utility I had created for 'width=34rem', because 34rem value is not present in default tailwind uitilities. But since intructor of this repository has clearly mentioned not to make any changes in config.js file, I didn't make new utility. If you are working with this file for any other project just add `width:{'34r': '34rem',},` in `tailwind.config.js > module.export > theme > extends`. -->
         <!-- part 1 starts -->
         <div class="flex h-28 sm:h-20 justify-between items-end text-left text-lg font-medium">
             <div class="">
-                <h2 class="font-semibold text-gray-900">Withdraw</h2>
-                <h3 class="font-normal text-gray-400 pr-4 sm:pr-0">Your balance to your bank</h3>
+                <h1 class="font-semibold text-gray-900">Withdraw Amount</h1>
+                <h3 class=" font-normal text-gray-400 pr-4 sm:pr-0">Your balance to your bank</h3>
             </div>
 
             <div>
-                <h2 class=" text-sm">Your balance</h2>
-                <span class="text-2xl text-black">$34,344</span>
+                <h2 class=" text-sm">Your bank balance</h2>
+                <span class="text-2xl text-black">₹21,03,000</span>
             </div>
         </div>
         <!-- part 1 ends -->
@@ -38,31 +36,31 @@
         <!-- part 2 starts -->
         <form action="#" class="flex flex-col justify-center mt-9">
             <label for="amount" class="flex flex-col cursor-pointer">
-                <span class="text-sm not-italic font-medium mb-3">Amount</span>
-                <div class="w-full flex rounded-md border-gray-300 border">
+                <span class="text-sm not-italic font-medium mb-3 ">Amount</span>
+                <div class="w-full flex rounded-md border-gray-300 border bg-white">
                     <select
-                        class="py-4 pl-3 border-transparent rounded-md focus:outline-none focus:ring-2 focus:ring-gray-300 focus:border-transparent">
+                        class="py-4 pl-3 border-transparent rounded-md focus:outline-none">
                         <option value="AED">AED</option>
                         <option value="ARS">ARS</option>
-                        <option value="INR">INR</option>
-                        <option value="USD" selected>USD</option>
+                        <option value="INR" selected>INR</option>
+                        <option value="USD">USD</option>
                     </select>
                     <input type="number" name="amount" id="amount"
-                        class="border-0 rounded-r-md w-4/5 border-l-0 border-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:border-transparent py-4 px-4 sm:px-8"
+                        class="border-0 rounded-r-md w-full focus:outline-none py-4 px-4 sm:px-8"
                         placeholder="Enter amount">
                 </div>
             </label>
 
-            <div class="flex justify-end my-5 mr font-medium text-xs space-x-2">
-                <span class="bg-gray-100 rounded-md p-2 cursor-pointer">$1000</span>
-                <span class="bg-gray-100 rounded-md p-2 cursor-pointer">$5000</span>
-                <span class="bg-gray-100 rounded-md p-2 cursor-pointer">$10,000</span>
+            <div class="flex justify-end mt-5 mr text-xs space-x-2 text-gray-600">
+                <button class="bg-gray-200 hover:bg-gray-300 rounded-md p-2">$1000</button>
+                <button class="bg-gray-200 hover:bg-gray-300 rounded-md p-2">$5000</button>
+                <button class="bg-gray-200 hover:bg-gray-300 rounded-md p-2">$10,000</button>
             </div>
 
-            <label for="AcNo" class="flex flex-col cursor-pointer">
+            <label for="AcNo" class="flex flex-col cursor-pointer mt-8">
                 <span class="mb-3 text-sm not-italic font-medium">Withdrawal Options</span>
 
-                <div class="w-full flex rounded-md border-gray-300 border">
+                <div class="w-full flex rounded-md border-gray-300 border pr-4 bg-white">
                     <div class="rounded-l-md border-r-0 border-gray-400 my-auto mx-2 py-4 px-6 sm:px-8 ">
                         <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -71,12 +69,12 @@
                         </svg>
                     </div>
                     <input type="number" name="AcNo" id="AcNo"
-                        class=" w-full border-transparent rounded-md py-4 px-4 sm:px-8 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:border-transparent"
-                        placeholder="Bank Account Ending in 9994">
+                        class=" w-full border-transparent rounded-md py-4 px-4 sm:px-0  focus:outline-none"
+                        placeholder="Bank Account Ending in 1234">
                 </div>
             </label>
 
-            <div class=" flex items-center justify-end pb-2">
+            <div class=" flex items-center justify-end pb-2 mt-2">
                 <label for="login"
                     class="cursor-pointer w-full sm:w-2/4 group  flex items-center  bg-indigo-900 rounded-md mt-5 mb-4 py-4 hover:shadow-lg">
                     <input type="submit" name="login" id="login" value="Withraw Amount"

@@ -14,22 +14,24 @@
   <include src="partials/header.html"></include>
 
   <!-- Component Start -->
-  <div class=" h-40 bg-blue-50 w-full"></div>
+  
   <!-- main section starts -->
   <section
-    class="mb-20 mx-auto pb-13 px-4 -mt-20 bg-white w-11/12 sm:w-4/5 md:w-[70%] lg:w-1/2 xl:w-34r  drop-shadow font-inter border">
+    class="mb-20 mx-auto pb-13 px-4 bg-gray-100 w-11/12 sm:w-4/5 md:w-[70%] lg:w-1/2 xl:w-34r  drop-shadow font-inter border">
+    <!-- Note: Here above in section's class, I have mentioned `xl:w-34r`. `w-34r` is a new utility I had created for 'width=34rem', because 34rem value is not present in default tailwind uitilities. But since intructor of this repository has clearly mentioned not to make any changes in config.js file, I didn't make new utility. If you are working with this file for any other project just add `width:{'34r': '34rem',},` in `tailwind.config.js > module.export > theme > extends`. -->
+        <!-- part 1 starts -->
     <svg width="71" height="71" class="mx-auto mt-14" viewBox="0 0 71 71" fill="none"
       xmlns="http://www.w3.org/2000/svg">
       <path fill-rule="evenodd" clip-rule="evenodd"
         d="M35.5002 0.208252C16.0095 0.208252 0.208496 16.0093 0.208496 35.4999C0.208496 54.9905 16.0095 70.7916 35.5002 70.7916C54.9908 70.7916 70.7918 54.9905 70.7918 35.4999C70.7918 16.0093 54.9908 0.208252 35.5002 0.208252ZM50.7975 29.5324C51.0792 29.2104 51.2936 28.8354 51.4282 28.4293C51.5628 28.0232 51.6148 27.5943 51.5812 27.1678C51.5476 26.7413 51.429 26.3259 51.2325 25.9459C51.0359 25.5659 50.7654 25.2291 50.4367 24.9552C50.1081 24.6813 49.728 24.476 49.3188 24.3512C48.9096 24.2264 48.4795 24.1846 48.054 24.2285C47.6284 24.2723 47.216 24.4008 46.8408 24.6064C46.4656 24.8121 46.1354 25.0906 45.8695 25.4257L32.0737 41.9775L24.9351 34.8358C24.33 34.2514 23.5196 33.928 22.6784 33.9353C21.8372 33.9426 21.0325 34.28 20.4376 34.8749C19.8428 35.4697 19.5054 36.2744 19.498 37.1156C19.4907 37.9568 19.8141 38.7673 20.3985 39.3724L30.0235 48.9974C30.3388 49.3124 30.7162 49.5583 31.1317 49.7194C31.5473 49.8805 31.9918 49.9533 32.4371 49.9331C32.8823 49.9129 33.3184 49.8001 33.7176 49.602C34.1169 49.4039 34.4704 49.1247 34.7558 48.7824L50.7975 29.5324Z"
-        fill="#368C6A" fill-opacity="0.77" />
+        fill="#17C37B" fill-opacity="0.77" />
     </svg>
 
 
     <div class="text-center text-gray-400 font-bold mt-16">Successfully Invested</div>
     <div class="text-center pt-3 ">
-      <span class="font-bold text-4xl pr-3">$45,563</span>
-      <span class="text-2xl text-gray-400">USD</span>
+      <span class="font-bold text-4xl pr-3">₹10,000</span>
+      <span class="text-2xl text-gray-400">INR</span>
     </div>
     <div class=" px-10 sm:px-20 pt-10 text-gray-400 text-md">
       On the following pages, we’ll ask a few questions to get to know you betterto get to know you better
@@ -43,13 +45,13 @@
         <img src="img/mastercard.png" alt="" class="h-8">
         <span class="text-gray-400 text-lg ml-4">Paid via Mastercard XXX-XX-0049</span>
       </div>
-      <span class="text-gray-300 text-md">12th Sept 2020</span>
+      <span class="text-gray-400 text-md">12th Sept 2020</span>
     </div>
-    <div class="my-4 md:flex items-center md:justify-around text-xl font-semibold space-y-6 md:space-y-0">
+    <div class="my-8 md:flex items-center md:justify-around text-xl font-semibold space-y-6 md:space-y-0">
       <button class="md:w-2/5 w-11/12 mx-5 h-16 bg-indigo-900 text-white rounded-md hover:shadow-md">
         Invest more
       </button>
-      <span class="flex items-center justify-center text-gray=700">Dashboard</span>
+      <a href="#" class="flex items-center justify-center text-gray=700">Dashboard</a>
     </div>
   </section>
   <!-- main section ends -->

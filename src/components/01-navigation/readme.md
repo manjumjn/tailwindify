@@ -1,3 +1,4 @@
 ## Preview
 
-![Navigation](preview.png)
+![Navigation](preview.png),
+![Navigation](mobile view.png)
