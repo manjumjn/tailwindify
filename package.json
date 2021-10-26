@@ -8,6 +8,7 @@
     "serve": "parcel serve src/**/*.html --port 8989 --open --no-cache"
   },
   "devDependencies": {
+    "@parcel/transformer-image": "2.0.0-rc.0",
     "@parcel/transformer-sass": "2.0.0-rc.0",
     "autoprefixer": "^10.3.6",
     "del-cli": "^4.0.1",
