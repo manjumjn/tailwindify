@@ -1,11 +1,11 @@
-# Tailwindify
+# 🌫 Tailwindify
 HTML Components built using TailwindCSS
 
 ### Built With
 - [TailwindCSS](https://tailwindcss.com/)
 - [ParcelJS](https://parceljs.org/)
 
-## Table of Components
+## 🎫 Table of Components
   * [Usage](#usage)
     + [Install Dependencies](#install-dependencies)
     + [Build Components](#build-components)
@@ -17,7 +17,7 @@ HTML Components built using TailwindCSS
   * [License](#license)
   * [Contact Information](#contact-information)
 
-## File Structure
+## 📜 File Structure
 
 ```
   ├── src/
@@ -44,7 +44,7 @@ HTML Components built using TailwindCSS
         ├──index.html             Main page of the website
   ├── dist/  Optimized components with respective folders (Available after `yarn build`)
 ```
-## Usage
+## 📊 Usage
 
 ### Install Dependencies
 
@@ -69,7 +69,7 @@ yarn build
 
 
 
-## How it works
+## 👩‍💻 How it works
 
 - Each component is present in its respective folder eg: `components/COMPONENT1`,`components/COMPONENT2`, Eg: `components/card` etc
 - SCSS file is added and linked directly within HTML using `link` attribute which will be compiled by parcel which as default `tailwindcss` styles.
@@ -88,28 +88,28 @@ yarn build
   ```
 - Once the command `yarn build` is run, the output files will be present on `dist` folder with the same component structure.
 
-## Naming Convention
+## 🖋 Naming Convention
 
 - Each Component should follow the naming as `SERIAL_NUMBER-COMPONENT_NAME`. Eg: `01-alert`,'02-notifications' etc
 - When there is a variation of the component such as `alert` we can name as `01-alert-variant2` etc
 - The serial number must follow along with category. For Example currently no card component is present, in that case `01-card`. Each component numbering starts from `01` followed by category
 
-## How to add new component
+## ➕ How to add new component
 
 1. Go to `src/components` directory. Duplicate the `template` folder into components with the component name. Follow [Naming Convention](#naming-convention) for naming the folder
 2. Update the title in `index.html` and contents within `<!-- Component start --> <!-- Component End -->` lines.
 3. Take a Screenshot of the result and replace the `preview.png` within the component folder.
 4. Run `yarn serve` to play with changes
 
-## Contribution
+## 🗣 Contribution
 
 Glad to see you are interested in improving this repository. Please read the contributing guidelines [here](https://github.com/manjumjn/tailwindify/blob/main/CONTRIBUTING.md)
 
-## License
+## 📄 License
 
 By contributing, you agree that your contributions will be licensed under its MIT License.
 
-## Contact Information
+## 📳 Contact Information
 
 - Email: manjumjng2@gmail.com
 - Twitter: https://twitter.com/manjumjn
